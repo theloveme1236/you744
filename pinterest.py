@@ -967,7 +967,7 @@ def instagram_follow():
                         with open('unfollowing.txt', 'a', encoding='utf-8') as result:
                             result.write("\n")
                             result.write(onclick_value)
-                        driver.save_screenshot('un_{}.png'.format(int(s))
+                        driver.save_screenshot('un_{}.png'.format(int(s)))
                         text_instgeram = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/section/main/div/div/div/span").text
                         print(text_instgeram)
 
